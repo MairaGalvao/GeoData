@@ -1,0 +1,110 @@
+{
+  "data": {
+    "1": {
+      "children": {
+        "1": {
+          "children": {
+            "1": {
+              "children": {},
+              "connection": "connection_123",
+              "is_a": "ClassA",
+              "name": "obj_classA",
+              "uuid": "5836e8d9-bd8d-450f-8daf-6f8beea71cc0"
+            }
+          },
+          "connection": "connection_231",
+          "is_a": "ClassC",
+          "name": "obj_classC",
+          "uuid": "c46ec978-235c-4c62-bfdd-9b5bdf24a121"
+        },
+        "2": {
+          "children": {
+            "1": {
+              "children": {},
+              "connection": "connection_123",
+              "is_a": "ClassA",
+              "name": "obj_classA",
+              "uuid": "3fa422ad-68d0-4f5a-a808-a01b4cf241f4"
+            }
+          },
+          "connection": "connection_231",
+          "is_a": "ClassC",
+          "name": "obj_classC",
+          "uuid": "3e41afb7-a406-4c07-9eba-afa953dd2807"
+        },
+        "3": {
+          "children": {
+            "1": {
+              "children": {},
+              "connection": "connection_123",
+              "is_a": "ClassA",
+              "name": "obj_classA",
+              "uuid": "bb94f9c0-b71a-4cd0-83fa-014d196377d8"
+            }
+          },
+          "connection": "connection_231",
+          "is_a": "ClassC",
+          "name": "obj_classC",
+          "uuid": "af5d3b6c-4665-4fdc-aa7f-e7603fc8313b"
+        },
+        "4": {
+          "children": {
+            "1": {
+              "children": {},
+              "connection": "connection_123",
+              "is_a": "ClassA",
+              "name": "obj_classA",
+              "uuid": "4e5517ac-46a9-4fa4-b7d3-f9987bb87f1f"
+            },
+            "2": {
+              "children": {},
+              "connection": "connection_123",
+              "is_a": "ClassA",
+              "name": "obj_classA",
+              "uuid": "599eb89c-7e9d-49e8-a552-f55054575b9f"
+            }
+          },
+          "connection": "connection_231",
+          "is_a": "ClassC",
+          "name": "obj_classC",
+          "uuid": "7a1bb3e1-2d08-4caf-a203-b4f2cf69b5d7"
+        },
+        "5": {
+          "children": {
+            "1": {
+              "children": {},
+              "connection": "connection_123",
+              "is_a": "ClassA",
+              "name": "obj_classA",
+              "uuid": "75d67b20-90f9-4952-8018-34f9631ec69a"
+            }
+          },
+          "connection": "connection_231",
+          "is_a": "ClassC",
+          "name": "obj_classC",
+          "uuid": "6f48d6a4-716b-4933-ba86-02f7afd1d61d"
+        },
+        "6": {
+          "children": {
+            "1": {
+              "children": {},
+              "connection": "connection_426",
+              "is_a": "ClassE",
+              "name": "obj_classE",
+              "uuid": "35a610b6-21ac-4a2f-a7c8-b7b5bd49e636"
+            }
+          },
+          "connection": "connection_387",
+          "is_a": "ClassD",
+          "name": "obj_classD",
+          "uuid": "2fe2cbc4-f0d0-4884-b50b-244f2d0d1efa"
+        }
+      },
+      "connection": "",
+      "is_a": "ClassB",
+      "name": "obj_classB",
+      "uuid": "9f9fc122-73a9-4297-97ed-b155b14bef9d"
+    }
+  },
+  "status": "success"
+}
