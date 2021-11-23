@@ -5,7 +5,7 @@ import './App.css';
 
 
 function App() {
-  const [ activeInfo, setActiveInfo ] = useState( null );
+  const [ activeInfo, setActiveInfo ] = useState( false );
   const [position, setPosition] = useState([0,0])
   const [featuresArray, setFeaturesArray] = useState()
   const [defaultColor, setDefaultColor] = useState(true)
@@ -57,6 +57,10 @@ function App() {
     setDefaultColor(!defaultColor)
   }
 
+  const displayInfo= () => {
+    setDefaultColor(!activeInfo)
+  }
+
 
 return (<>
 
@@ -64,7 +68,7 @@ return (<>
  <MapContainer 
           center = {[8.382046, 11.6146463 ]}
           center={position} 
-            zoom = { 1 }
+            zoom = { 5 }
           scrollWheelZoom = { true } 
       >
       <TileLayer 
@@ -78,14 +82,38 @@ return (<>
    {featuresArray && featuresArray.map((featureObject, idx1) => { 
      return featureObject.geometry.coordinates.map((singleCoordinate, idx2) => {
       const myid = idx1 + '_' + idx2 
+
+
+      
        return (<Marker       key={myid}  position={singleCoordinate}
         icon= {icon(featureObject.properties.color)}
          > 
-            
+
+
+<Popup 
+        position={singleCoordinate}
+          onClick={()=>{
+            <div>
+              {/* not working yet, it is popping up a display but without the data */}
+            <p>Each info :                {featureObject.properties.info.diameter}</p>
+            <p>Each uuid :         { featureObject.properties.uuid }</p>
+
+          </div>     }}
+        >
+     
+        </Popup>
        </Marker>)
       
      }
      )})} 
+     ​
+        
+      
+
+
+         
+
+     
 
   </MapContainer> 
 
